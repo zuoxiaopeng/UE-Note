@@ -23,6 +23,7 @@
 | `NotPlaceable` | 编辑器集成 | 禁止把这个类的实例放置到关卡中。 |
 | `ClassGroup="GroupName"` | 编辑器集成 | 在编辑器下拉菜单中将此类分组到自定义类别下。 |
 | `Within=OuterClass` | 高级 | 限制此类的实例只能作为指定外部类的子对象创建。 |
+
 ---
  
 ## UPROPERTY()
@@ -47,6 +48,7 @@
 | `SaveGame` | 内存/序列化 | 变量将被包含在存档游戏数据中。 |
 | `BlueprintAssignable` | 委托 | **用于多播委托**。允许在蓝图中绑定事件到此委托。 |
 | `Category="Category\|SubCategory"` | 编辑器集成 | **强烈推荐**。在细节面板中将变量放入指定的分类中。 |
+
 ---
 
 - 通用元数据
@@ -60,6 +62,7 @@
 | `DisplayName="Readable Name"` | `UPROPERTY`, `UFUNCTION` | 在编辑器UI中显示一个更易读的名称，而非变量/函数名。 |
 | `BlueprintAutocast` | `UPROPERTY` | (高级) 允许在蓝图中自动将对象转换为此属性类。 |
 | `AllowPrivateAccess` | `UPROPERTY` | 允许蓝图访问私有（`private`）属性。 |
+
 ---
 
 ## UFUNCTION()
@@ -85,5 +88,6 @@
 | `Unreliable` | 网络复制 (RPC) | 与RPC说明符联用，不保证函数调用会送达（开销小，用于频繁更新）。 |
 | `BlueprintAssignable` | 委托 | **用于委托声明**。声明一个蓝图可绑定事件的多播委托。 |
 | `Category="CategoryName"` | 编辑器集成 | **推荐**。在蓝图的节点菜单中，将函数放入指定的分类中。 |
+
 ---
   
